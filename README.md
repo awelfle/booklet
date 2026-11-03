@@ -1,13 +1,37 @@
-# Booklet
+<p align="center">
+  <a href="https://booklet.lol">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="site/banner-dark.jpg">
+      <img alt="Booklet — your reading list, kept on Are.na" src="site/banner-light.jpg" width="800">
+    </picture>
+  </a>
+</p>
 
-A small reading tracker for your phone that keeps your books on [Are.na](https://www.are.na).
+<p align="center">
+  <a href="https://booklet.lol"><strong>booklet.lol</strong></a> ·
+  <a href="#set-up-your-own-copy">Set up your own copy</a> ·
+  <a href="#how-it-works">How it works</a> ·
+  <a href="#currently-reading-on-your-website">Website widget</a>
+</p>
 
-Three shelves — **To Read**, **Reading** and **Read** — each an Are.na channel. Search for a book, tap it, and
-Booklet saves it with its cover, author, publisher, page count and links to Bookshop, Amazon and Open
-Library. Start it, finish it, rate it, fix the dates. Add Booklet to your home screen and it works like an app.
+**Booklet** is a small reading tracker for your phone that keeps your books on [Are.na](https://www.are.na).
+Three shelves — **To Read**, **Reading** and **Read** — each an Are.na channel you own.
 
-There's no server and no account to make: Booklet is a static web page that talks to Are.na directly with
-your own token. You host your own copy (free on Netlify, GitHub Pages or anything that serves files).
+- **Finds the book.** Searches Open Library and Google Books together, so new releases, typos and ISBNs all turn up.
+- **Saves the right edition.** The U.S. print edition, hardcover first, with cover, publisher, pages and links
+  to Bookshop, Amazon and Open Library.
+- **Dates and ratings.** Booklet notes when you start and finish; rate it when you're done, fix dates any time.
+- **Lives on your home screen.** Light and dark, made for one thumb.
+- **No server, no new account.** A static page that talks to Are.na with your own token, which never leaves
+  your device. Free and open source.
+
+<p align="center">
+  <img src="site/screens/shelf.jpg" alt="The Read shelf with covers, star ratings and finish dates" width="240">
+  &nbsp;
+  <img src="site/screens/book.jpg" alt="A book's details: edition, start date, links and actions" width="240">
+  &nbsp;
+  <img src="site/screens/dark.jpg" alt="The To Read shelf in dark mode" width="240">
+</p>
 
 > Booklet is an independent project and isn't affiliated with Are.na.
 
@@ -87,6 +111,7 @@ Plain HTML, CSS and ES modules — no framework and no build step.
 | `scripts/check-search.js` | Runs ~26 real searches through the app's code and prints what would be saved |
 | `scripts/import-books.mjs` | Bulk-adds prepared books to a shelf |
 | `scripts/deploy.sh` | Deploys a clean export to the linked Netlify site |
+| `site/` | The booklet.lol landing page and README images (`banner.html` is the banner's source) |
 
 ```sh
 python3 -m http.server 8000   # then open http://localhost:8000
