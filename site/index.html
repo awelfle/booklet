@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Booklet — a reading tracker that keeps your books on Are.na</title>
-<meta name="description" content="Booklet is a small phone app for what you want to read, are reading and have read. Your books live in your own Are.na channels. Free and open source.">
+<meta name="description" content="Booklet is a tiny app for your phone that keeps track of what you want to read, what you’re reading and what you’ve finished, and saves it all to your own Are.na channels.">
 <meta property="og:title" content="Booklet">
 <meta property="og:description" content="A reading tracker that keeps your books on Are.na. Free and open source.">
 <meta property="og:image" content="https://booklet.lol/screens/shelf.jpg">
@@ -69,10 +69,8 @@
   .section-lede { color: var(--muted); max-width: 40em; margin: 0 0 40px; }
   .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
   .feature { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 22px; }
-  .feature h3 { font: 600 20px/1.25 var(--serif); margin: 10px 0 6px; }
+  .feature h3 { font: 600 20px/1.25 var(--serif); margin: 0 0 6px; }
   .feature p { margin: 0; color: var(--muted); font-size: 15.5px; }
-  .glyph { width: 38px; height: 38px; border-radius: 10px; background: var(--manila); color: var(--accent);
-    display: grid; place-items: center; font-size: 19px; }
 
   .split { display: grid; grid-template-columns: .9fr 1.1fr; gap: 56px; align-items: center; }
   .split .phone { position: relative; margin: 0 auto; transform: none; }
@@ -92,6 +90,7 @@
   .faq h3 { font: 600 19px/1.3 var(--serif); margin: 0 0 6px; }
   .faq p { margin: 0; color: var(--muted); }
 
+  .why p { max-width: 40em; color: var(--muted); margin: 0 0 14px; font-size: 18px; }
   footer { border-top: 1px solid var(--line); padding: 36px 0 56px; color: var(--muted); font-size: 14px; }
   footer .row { display: flex; flex-wrap: wrap; gap: 8px 22px; justify-content: space-between; }
   footer a { color: var(--muted); }
@@ -126,14 +125,14 @@
     <div>
       <p class="eyebrow">A reading tracker for Are.na</p>
       <h1>Your reading list, <em>kept on Are.na.</em></h1>
-      <p class="lede">Booklet is a small app for your phone: the books you want to read, the ones you’re reading,
-        and the ones you’ve finished. Search, tap, done. Your books live in your own Are.na channels — no new
-        account, no server.</p>
+      <p class="lede">Booklet is a tiny app for your phone that keeps track of what you want to read, what
+        you’re reading and what you’ve finished. Everything gets saved to channels in your own Are.na
+        account, so there’s nothing new to sign up for.</p>
       <div class="ctas">
         <a class="btn primary" href="https://github.com/awelfle/booklet">Get Booklet on GitHub</a>
-        <a class="btn" href="https://github.com/awelfle/booklet#set-up-your-own-copy">Read the setup guide</a>
+        <a class="btn" href="https://github.com/awelfle/booklet#set-up-your-own-copy">How to set it up</a>
       </div>
-      <p class="fine">Free and open source (MIT). Works with free Are.na accounts.</p>
+      <p class="fine">It’s free and open source, and it works fine with a free Are.na account.</p>
     </div>
     <div class="phones" aria-hidden="true">
       <div class="phone back"><img src="/screens/dark.jpg" alt=""></div>
@@ -143,22 +142,24 @@
 
   <section id="features">
     <div class="wrap">
-      <h2>Everything a reading list needs, nothing it doesn’t</h2>
-      <p class="section-lede">Made for adding a book in the bookshop, marking it started on the train, and
-        rating it the night you finish.</p>
+      <h2>What it does</h2>
+      <p class="section-lede">It’s a list of books, so it doesn’t do a ton. But it does these things well.</p>
       <div class="features">
-        <div class="feature"><div class="glyph">◫</div><h3>Three shelves</h3>
-          <p>To Read, Reading and Read. Move a book along with one tap; Booklet notes when you started and finished.</p></div>
-        <div class="feature"><div class="glyph">⌕</div><h3>Finds the book</h3>
-          <p>Searches Open Library and Google Books together, so brand-new releases, typos and ISBNs all turn up.</p></div>
-        <div class="feature"><div class="glyph">❦</div><h3>The right edition</h3>
-          <p>Saves the U.S. print edition — hardcover first — with its cover, publisher, pages and ISBN.</p></div>
-        <div class="feature"><div class="glyph">★</div><h3>Dates and ratings</h3>
-          <p>Rate a book when you finish it, and fix any start or finish date after the fact.</p></div>
-        <div class="feature"><div class="glyph">▢</div><h3>On your home screen</h3>
-          <p>Add it to your phone and it opens like an app. Light and dark, sized for one thumb.</p></div>
-        <div class="feature"><div class="glyph">◎</div><h3>Your data, your Are.na</h3>
-          <p>Every book is a block in your own channels. Booklet has no server; your token stays on your device.</p></div>
+        <div class="feature"><h3>Three shelves</h3>
+          <p>To Read, Reading and Read. Moving a book to the next shelf takes one tap, and Booklet writes down the date.</p></div>
+        <div class="feature"><h3>Search that finds things</h3>
+          <p>It checks Open Library and Google Books at the same time, so it can find a book that came out last
+            week, and it doesn’t mind a typo or two.</p></div>
+        <div class="feature"><h3>The U.S. edition</h3>
+          <p>It picks the American print edition (hardcover, if there is one) and saves its cover, publisher,
+            page count and ISBN.</p></div>
+        <div class="feature"><h3>Ratings and dates</h3>
+          <p>Give a book some stars when you finish it. Forgot to mark when you started? You can fix the date later.</p></div>
+        <div class="feature"><h3>On your home screen</h3>
+          <p>Add it to your phone’s home screen and it opens like any other app. It does dark mode, too.</p></div>
+        <div class="feature"><h3>It stays on Are.na</h3>
+          <p>Each book is a block in your own channels. There’s no Booklet server, and your Are.na token
+            never leaves your phone.</p></div>
       </div>
     </div>
   </section>
@@ -167,13 +168,13 @@
     <div class="wrap split">
       <div class="phone"><img src="/screens/book.jpg" alt="A book in Booklet: cover, author, edition details, start date, links and actions"></div>
       <div>
-        <h2>Everything about a book, one tap away</h2>
-        <p class="section-lede">Tap any book for its edition details and your dates, with links out to read
-          more or buy a copy.</p>
+        <h2>A closer look at a book</h2>
+        <p class="section-lede">Tap any book to see which edition you saved and when you started it, along with
+          links if you want to read more about it or buy a copy.</p>
         <ul class="checks">
           <li>Links to Bookshop, Open Library, Google Books and Amazon</li>
-          <li>“Finished it” asks for a rating; “Reading it again” starts a fresh read</li>
-          <li>Because it’s Are.na, every book is also a block you can connect to other channels</li>
+          <li>“Finished it” asks how many stars it gets, and “Reading it again” starts the clock over</li>
+          <li>Since it’s all on Are.na, you can connect any book to your other channels</li>
         </ul>
       </div>
     </div>
@@ -181,39 +182,54 @@
 
   <section id="setup">
     <div class="wrap">
-      <h2>Set up in about ten minutes</h2>
-      <p class="section-lede">Booklet is a web page you host yourself — free on Netlify, GitHub Pages or anything
-        that serves files. The <a href="https://github.com/awelfle/booklet#set-up-your-own-copy">README</a> walks through it.</p>
+      <h2>Setting it up</h2>
+      <p class="section-lede">Booklet isn’t a hosted service — you run your own copy. That’s free on Netlify,
+        GitHub Pages or pretty much anywhere that serves web pages. The
+        <a href="https://github.com/awelfle/booklet#set-up-your-own-copy">README</a> has the details, but
+        here’s the short version:</p>
       <ol class="steps">
-        <li><h3>Deploy your copy</h3><p>Fork the repo and deploy it. There’s a one-click Netlify button, and no build step.</p></li>
-        <li><h3>Make an Are.na token</h3><p>Create a personal access token with write access in your Are.na settings.</p></li>
-        <li><h3>Create your shelves</h3><p>Open your copy, paste the token and tap “Create my shelves.” Then add it to your home screen.</p></li>
+        <li><h3>Make your own copy</h3><p>Fork the repo and deploy it. There’s a “Deploy to Netlify” button, and nothing to build.</p></li>
+        <li><h3>Get an Are.na token</h3><p>Make a personal access token with write access in your Are.na settings.</p></li>
+        <li><h3>Make your shelves</h3><p>Open your copy, paste in the token and tap “Create my shelves.” Then add it to your home screen.</p></li>
       </ol>
     </div>
   </section>
 
   <section>
     <div class="wrap">
-      <h2>Show what you’re reading</h2>
-      <p class="section-lede">Booklet comes with a tiny widget that lists your Reading shelf on any website.
-        No token needed — your shelves are viewable by anyone.</p>
+      <h2>Put it on your website</h2>
+      <p class="section-lede">Booklet comes with a little widget that shows your Reading shelf on any web page.
+        It doesn’t need your token, because anyone can look at your shelves (they just can’t change them).</p>
 <pre><code>&lt;div data-currently-reading="your-reading-channel"&gt;&lt;/div&gt;
 &lt;script src="https://your-booklet/currently-reading.js" defer&gt;&lt;/script&gt;</code></pre>
     </div>
   </section>
 
   <section>
+    <div class="wrap why">
+      <h2>Why I made this</h2>
+      <p>Hi! I’m <a href="https://andy.wtf">Andy</a>. I wanted a quick, low-fuss way to keep my reading list that
+        wasn’t a social network, and Are.na felt like a nice place for it to live. So I built one. I made it
+        with Claude Code, so… take that as you will!</p>
+      <p>If you try it and something’s off, <a href="https://github.com/awelfle/booklet/issues">open an issue</a>
+        or <a href="https://andy.wtf/contact/">drop me a line</a>.</p>
+    </div>
+  </section>
+
+  <section>
     <div class="wrap">
-      <h2>Questions</h2>
+      <h2>Questions you might have</h2>
       <div class="faq">
         <div><h3>Do I need Are.na Premium?</h3>
-          <p>No. Booklet doesn’t use any Premium-only features. Free accounts have lower API rate limits, which is plenty for books.</p></div>
-        <div><h3>What does it cost?</h3>
-          <p>Nothing. Booklet is free and open source, and static hosting is free on most hosts.</p></div>
-        <div><h3>Where’s my data?</h3>
-          <p>In your Are.na channels. Booklet stores only your token and shelf names, in your browser.</p></div>
-        <div><h3>Is this made by Are.na?</h3>
-          <p>No — Booklet is an independent project built on Are.na’s public API.</p></div>
+          <p>Nope. Booklet doesn’t use any Premium-only features. Free accounts can make fewer requests per minute,
+            but a reading list doesn’t come anywhere near the limit.</p></div>
+        <div><h3>Does it cost anything?</h3>
+          <p>No. Booklet is free and open source, and most places that host static sites are free, too.</p></div>
+        <div><h3>Where does my stuff go?</h3>
+          <p>Into your Are.na channels. The only things Booklet keeps on your phone are your token and which
+            channels are your shelves.</p></div>
+        <div><h3>Is this an Are.na thing?</h3>
+          <p>No. It’s an independent project that uses Are.na’s public API.</p></div>
       </div>
     </div>
   </section>
@@ -221,7 +237,7 @@
 
 <footer>
   <div class="wrap row">
-    <span>Booklet · MIT license · Made by <a href="https://andy.wtf">Andy Welfle</a></span>
+    <span>Booklet is free and open source (MIT). Made by <a href="https://andy.wtf">Andy Welfle</a> in San Francisco.</span>
     <span><a href="https://github.com/awelfle/booklet">GitHub</a> · <a href="https://github.com/awelfle/booklet#readme">README</a> ·
       Book data from <a href="https://openlibrary.org">Open Library</a> and <a href="https://books.google.com">Google Books</a></span>
   </div>

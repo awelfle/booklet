@@ -14,16 +14,19 @@
   <a href="#currently-reading-on-your-website">Website widget</a>
 </p>
 
-**Booklet** is a small reading tracker for your phone that keeps your books on [Are.na](https://www.are.na).
-Three shelves — **To Read**, **Reading** and **Read** — each an Are.na channel you own.
+**Booklet** is a tiny reading tracker for your phone. It has three shelves — To Read, Reading and Read —
+and every book you add gets saved to channels in your own [Are.na](https://www.are.na) account.
 
-- **Finds the book.** Searches Open Library and Google Books together, so new releases, typos and ISBNs all turn up.
-- **Saves the right edition.** The U.S. print edition, hardcover first, with cover, publisher, pages and links
-  to Bookshop, Amazon and Open Library.
-- **Dates and ratings.** Booklet notes when you start and finish; rate it when you're done, fix dates any time.
-- **Lives on your home screen.** Light and dark, made for one thumb.
-- **No server, no new account.** A static page that talks to Are.na with your own token, which never leaves
-  your device. Free and open source.
+Here's what it does:
+
+- Searches Open Library and Google Books at the same time, so it finds new releases and doesn't mind typos.
+- Saves the U.S. print edition (hardcover, if there is one) with its cover, publisher, page count, ISBN and
+  links to Bookshop, Amazon and Open Library.
+- Writes down when you start and finish a book, lets you give it stars, and lets you fix the dates later.
+- Opens from your phone's home screen like any other app, in light or dark mode.
+- Runs entirely in your browser. There's no Booklet server, and your Are.na token stays on your device.
+
+I made it because I wanted a quick reading list that wasn't a social network. It's free and open source.
 
 <p align="center">
   <img src="site/screens/shelf.jpg" alt="The Read shelf with covers, star ratings and finish dates" width="240">
@@ -33,24 +36,28 @@ Three shelves — **To Read**, **Reading** and **Read** — each an Are.na chann
   <img src="site/screens/dark.jpg" alt="The To Read shelf in dark mode" width="240">
 </p>
 
-> Booklet is an independent project and isn't affiliated with Are.na.
+> Booklet is an independent project. It isn't made by or affiliated with Are.na.
 
 ## How it works
 
-- **Are.na is the database.** Each shelf is a channel you own (created as *closed*: anyone can view it,
-  only you can add). Each book is a block — an image block of the cover, with the book's details stored
-  as block metadata. Moving a book between shelves moves its connection; the dates and your rating live
-  on that connection.
-- **Search uses Open Library and Google Books together.** Google is better at finding books (new
-  releases, typos); Open Library is better at picking the edition. Booklet merges both and saves the
-  **U.S. English print edition, hardcover first**, using ISBN and publisher clues.
-- **Your token stays on your device.** It's saved in the browser's local storage and only ever sent to
-  Are.na.
+Each shelf is an Are.na channel you own. Booklet makes them as *closed* channels, which means anyone can
+look at them but only you can add to them.
+
+Each book is a block: an image of the cover, with the book's details saved as metadata on the block.
+Moving a book to another shelf moves its connection, and the dates and your rating are stored on that
+connection.
+
+Search uses Open Library and Google Books together. In testing, Google was better at finding books
+(especially new releases and misspellings) and Open Library was better at telling editions apart. Booklet
+merges the results and saves the U.S. English print edition, hardcover first, based on the ISBN and
+publisher.
+
+Your token is saved in your browser's local storage and only ever gets sent to Are.na.
 
 ### Do I need Are.na Premium?
 
-No. Booklet doesn't use any Premium-only API features. Free accounts have lower API rate limits
-(30 changes a minute, against 60 on Premium), which is plenty for tracking books.
+Nope. Booklet doesn't use any Premium-only API features. Free accounts get lower API rate limits
+(30 changes a minute instead of 60), but a reading list doesn't come anywhere near that.
 
 ## Set up your own copy
 
@@ -63,12 +70,14 @@ No. Booklet doesn't use any Premium-only API features. Free accounts have lower 
    (Already have channels you want to use? Paste their links instead and tap Save.)
 4. **On iPhone:** Share → Add to Home Screen.
 
-On iOS, a home-screen app doesn't share storage with Safari, so you'll paste the token once more there.
-To skip re-entering your shelves on new devices, put their slugs in `DEFAULT_CHANNELS` (see below).
+One iPhone quirk: an app on your home screen doesn't share storage with Safari, so you'll need to paste
+your token in again there. If you don't want to re-enter your shelves on every new device, put their
+slugs in `DEFAULT_CHANNELS` (more on that below).
 
 ### Optional: a Google Books key
 
-Without one, Booklet searches Open Library only, which is a little weaker on brand-new books.
+You don't need one. Without it, Booklet only searches Open Library, which is a little slower to list
+brand-new books.
 
 1. In [Google Cloud Console](https://console.cloud.google.com), create a project and enable the **Books API**.
 2. Create an **API key**. Restrict it to **Websites** → your copy's address (e.g. `https://books.example.com/*`)
@@ -84,8 +93,8 @@ private fork.
 
 ## "Currently reading" on your website
 
-`currently-reading.js` is a self-contained widget that lists your Reading shelf on any site — no token
-needed, since the channel is viewable by anyone:
+`currently-reading.js` is a little widget that lists your Reading shelf on any web page. It doesn't need
+your token, because anyone can look at the channel:
 
 ```html
 <div data-currently-reading="your-reading-channel-slug"></div>
@@ -96,7 +105,7 @@ See `widget-demo.html`. Style it with the `.cr-*` classes.
 
 ## Development
 
-Plain HTML, CSS and ES modules — no framework and no build step.
+It's plain HTML, CSS and JavaScript modules, with no framework and no build step.
 
 | Path | |
 |---|---|
