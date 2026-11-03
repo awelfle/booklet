@@ -1,8 +1,8 @@
 <p align="center">
   <a href="https://booklet.lol">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="site/banner-dark-v2.jpg">
-      <img alt="Booklet — your reading list, kept on Are.na" src="site/banner-light-v2.jpg" width="800">
+      <source media="(prefers-color-scheme: dark)" srcset="site/banner-dark-v3.jpg">
+      <img alt="Booklet: a simple, personal reading list powered by Are.na" src="site/banner-light-v3.jpg" width="800">
     </picture>
   </a>
 </p>

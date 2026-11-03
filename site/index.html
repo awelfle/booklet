@@ -45,9 +45,7 @@
 
   /* Hero */
   .hero { display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: center; padding: 40px 0 72px; }
-  .eyebrow { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 14px; }
-  h1 { font: 600 clamp(40px, 6vw, 64px)/1.04 var(--serif); letter-spacing: -.025em; margin: 0 0 20px; }
-  h1 em { color: var(--accent); }
+  h1 { font: 600 clamp(36px, 5vw, 56px)/1.06 var(--serif); letter-spacing: -.025em; margin: 0 0 20px; }
   .lede { font-size: 19px; color: var(--muted); max-width: 34em; margin: 0 0 30px; }
   .ctas { display: flex; flex-wrap: wrap; gap: 12px; }
   .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 20px; border-radius: 12px; font-weight: 600;
@@ -121,11 +119,9 @@
 <main>
   <div class="wrap hero">
     <div>
-      <p class="eyebrow">A reading tracker for Are.na</p>
-      <h1>Your reading list, <em>kept on Are.na.</em></h1>
-      <p class="lede">Booklet is a tiny app for your phone that keeps track of what you want to read, what
-        you’re reading and what you’ve finished. Everything gets saved to channels in your own Are.na
-        account, so there’s nothing new to sign up for.</p>
+      <h1>A simple, personal reading list powered by Are.na</h1>
+      <p class="lede">Booklet is a tiny app for your phone that saves your books to channels in your own
+        Are.na account, so there’s nothing new to sign up for.</p>
       <div class="ctas">
         <a class="btn primary" href="https://github.com/awelfle/booklet">Get Booklet on GitHub</a>
         <a class="btn" href="https://github.com/awelfle/booklet#set-up-your-own-copy">How to set it up</a>
@@ -141,16 +137,17 @@
   <section id="features">
     <div class="wrap">
       <h2>What it does</h2>
-      <p class="section-lede">It’s a list of books, so it doesn’t do a ton. But it does these things well.</p>
+      <p class="section-lede">Booklet lets you keep track of your reading list — your To Read list, what you’re
+        currently reading, and what you have already read.</p>
       <div class="features">
         <div class="feature"><h3>Three shelves</h3>
           <p>To Read, Reading and Read. Moving a book to the next shelf takes one tap, and Booklet writes down the date.</p></div>
         <div class="feature"><h3>Search that finds things</h3>
-          <p>It checks Open Library and Google Books at the same time, so it can find a book that came out last
-            week, and it doesn’t mind a typo or two.</p></div>
-        <div class="feature"><h3>The U.S. edition</h3>
-          <p>It picks the American print edition (hardcover, if there is one) and saves its cover, publisher,
-            page count and ISBN.</p></div>
+          <p>It searches Open Library, and Google Books too if you set that up, so it can find a book that came
+            out last week, and it doesn’t mind a typo or two.</p></div>
+        <div class="feature"><h3>Covers and details</h3>
+          <p>Pick a book and Booklet fills in the cover, author, publisher and page count for you, so your
+            shelves look nice on Are.na, too.</p></div>
         <div class="feature"><h3>Ratings and dates</h3>
           <p>Give a book some stars when you finish it. Forgot to mark when you started? You can fix the date later.</p></div>
         <div class="feature"><h3>On your home screen</h3>
@@ -170,7 +167,8 @@
         <p class="section-lede">Tap any book to see which edition you saved and when you started it, along with
           links if you want to read more about it or buy a copy.</p>
         <ul class="checks">
-          <li>Links to Bookshop, Open Library, Google Books and Amazon</li>
+          <li>Links to Bookshop, Open Library and Amazon, plus Google Books if you’ve added a Google Books key
+            (it’s optional, and takes a few extra minutes to set up)</li>
           <li>“Finished it” asks how many stars it gets, and “Reading it again” starts the clock over</li>
           <li>Since it’s all on Are.na, you can connect any book to your other channels</li>
         </ul>
@@ -194,20 +192,13 @@
   </section>
 
   <section>
-    <div class="wrap why">
-      <h2>Why I made this</h2>
-      <p>Hi! I’m <a href="https://andy.wtf">Andy</a>. I wanted a quick, low-fuss way to keep my reading list that
-        wasn’t a social network, and Are.na felt like a nice place for it to live. So I built one. I made it
-        with Claude Code, so… take that as you will!</p>
-      <p>If you try it and something’s off, <a href="https://github.com/awelfle/booklet/issues">open an issue</a>
-        or <a href="https://andy.wtf/contact/">drop me a line</a>.</p>
-    </div>
-  </section>
-
-  <section>
     <div class="wrap">
       <h2>Questions you might have</h2>
       <div class="faq">
+        <div><h3>What is Are.na?</h3>
+          <p><a href="https://www.are.na">Are.na</a> is a place to collect things you find — links, images, text
+            and files — and organize them into collections called channels. There are no ads. Booklet keeps
+            your books in a few of your channels.</p></div>
         <div><h3>Do I need Are.na Premium?</h3>
           <p>Nope. Booklet doesn’t use any Premium-only features. Free accounts can make fewer requests per minute,
             but a reading list doesn’t come anywhere near the limit.</p></div>
@@ -218,7 +209,21 @@
             channels are your shelves.</p></div>
         <div><h3>Is this an Are.na thing?</h3>
           <p>No. It’s an independent project that uses Are.na’s public API.</p></div>
+        <div><h3>Is this vibe coded?</h3>
+          <p>Pretty much, yes. I designed it and decided how everything should work, and an AI (Claude) wrote
+            the code at my direction. It has automated tests and has been through a code review, but you should
+            know where it came from.</p></div>
       </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap why">
+      <h2>Why I made this</h2>
+      <p>Hi! I’m <a href="https://andy.wtf">Andy</a>. I wanted a quick, low-fuss way to keep my reading list that
+        wasn’t a social network, and Are.na felt like a nice place for it to live. So I built one.</p>
+      <p>If you try it and something’s off, <a href="https://github.com/awelfle/booklet/issues">open an issue</a>
+        or <a href="https://andy.wtf/contact/">drop me a line</a>.</p>
     </div>
   </section>
 </main>
