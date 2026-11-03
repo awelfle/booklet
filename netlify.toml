@@ -1,9 +1,2 @@
 [build]
   publish = "."
-
-# Let any site embed the widget script.
-[[headers]]
-  for = "/currently-reading.js"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
-    Cache-Control = "public, max-age=3600"

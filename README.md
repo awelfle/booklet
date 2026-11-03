@@ -10,8 +10,7 @@
 <p align="center">
   <a href="https://booklet.lol"><strong>booklet.lol</strong></a> ·
   <a href="#set-up-your-own-copy">Set up your own copy</a> ·
-  <a href="#how-it-works">How it works</a> ·
-  <a href="#currently-reading-on-your-website">Website widget</a>
+  <a href="#how-it-works">How it works</a>
 </p>
 
 **Booklet** is a tiny reading tracker for your phone. It has three shelves — To Read, Reading and Read —
@@ -90,18 +89,6 @@ brand-new books.
 values out of a public fork, copy `js/config.js` to `config.local.js` at the repo root (it's gitignored),
 fill it in, and deploy with `scripts/deploy.sh`, which swaps it in. Or just edit `js/config.js` in a
 private fork.
-
-## "Currently reading" on your website
-
-`currently-reading.js` is a little widget that lists your Reading shelf on any web page. It doesn't need
-your token, because anyone can look at the channel:
-
-```html
-<div data-currently-reading="your-reading-channel-slug"></div>
-<script src="https://YOUR-BOOKLET-COPY/currently-reading.js" defer></script>
-```
-
-See `widget-demo.html`. Style it with the `.cr-*` classes.
 
 ## Development
 
