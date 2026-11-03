@@ -4,3 +4,6 @@ config.local.js
 node_modules/
 .DS_Store
 .claude/
+
+# Private dev log
+DEVLOG.md
