@@ -1,8 +1,8 @@
 <p align="center">
   <a href="https://booklet.lol">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="site/banner-dark.jpg">
-      <img alt="Booklet — your reading list, kept on Are.na" src="site/banner-light.jpg" width="800">
+      <source media="(prefers-color-scheme: dark)" srcset="site/banner-dark-v2.jpg">
+      <img alt="Booklet — your reading list, kept on Are.na" src="site/banner-light-v2.jpg" width="800">
     </picture>
   </a>
 </p>
@@ -28,7 +28,7 @@ Here's what it does:
 I made it because I wanted a quick reading list that wasn't a social network. It's free and open source.
 
 <p align="center">
-  <img src="site/screens/shelf.jpg" alt="The Read shelf with covers, star ratings and finish dates" width="240">
+  <img src="site/screens/shelf-v2.jpg" alt="The Read shelf with covers, star ratings and finish dates" width="240">
   &nbsp;
   <img src="site/screens/book.jpg" alt="A book's details: edition, start date, links and actions" width="240">
   &nbsp;
