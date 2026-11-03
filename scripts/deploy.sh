@@ -7,7 +7,7 @@ out=$(mktemp -d)
 git archive HEAD | tar -x -C "$out"
 if [ -f config.local.js ]; then
   stamp=$(git log -1 --format='%cs %h')
-  sed "s/\$Format:%cs %h\$/$stamp/" config.local.js > "$out/js/config.js"
+  sed 's/\$Format:%cs %h\$/'"$stamp"'/' config.local.js > "$out/js/config.js"
   echo "Using config.local.js"
 fi
 netlify deploy --prod --dir "$out"
