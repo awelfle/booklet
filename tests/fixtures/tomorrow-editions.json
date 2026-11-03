@@ -1,0 +1,317 @@
+[
+{
+"key": "/books/OL62085818M",
+"isbn_13": [
+"9782265155602"
+],
+"publishers": [
+"Fleuve \u00e9ditions"
+],
+"publish_places": [
+"Paris, France"
+],
+"publish_date": "2023",
+"languages": [
+{
+"key": "/languages/fre"
+}
+],
+"covers": [
+15228986
+],
+"number_of_pages": 523
+},
+{
+"key": "/books/OL60632368M",
+"isbn_13": [
+"9789046829202"
+],
+"isbn_10": [
+"9046829200"
+],
+"physical_format": "Paperback",
+"publishers": [
+"Nieuw Amsterdam"
+],
+"publish_date": "January 6, 2023",
+"languages": [
+{
+"key": "/languages/dut"
+}
+],
+"covers": [
+15142577
+],
+"number_of_pages": 415
+},
+{
+"key": "/books/OL53616477M",
+"isbn_13": [
+"9781529193626"
+],
+"physical_format": "Audiobook",
+"publishers": [
+"Random House"
+],
+"publish_date": "2022",
+"languages": [
+{
+"key": "/languages/ita"
+}
+],
+"covers": [
+14812349
+]
+},
+{
+"key": "/books/OL51804378M",
+"isbn_13": [
+"9781529944792"
+],
+"publishers": [
+"Penguin Random House"
+],
+"publish_date": "2024",
+"languages": [
+{
+"key": "/languages/eng"
+}
+],
+"covers": [
+14849932
+]
+},
+{
+"key": "/books/OL47330507M",
+"isbn_13": [
+"9788419332158"
+],
+"isbn_10": [
+"8419332151"
+],
+"physical_format": "paperback",
+"publishers": [
+"Periscopi"
+],
+"publish_date": "Feb 22, 2023",
+"covers": [
+13916535
+],
+"number_of_pages": 536
+},
+{
+"key": "/books/OL47448529M",
+"isbn_13": [
+"9788411481489"
+],
+"isbn_10": [
+"8411481484"
+],
+"physical_format": "hardcover",
+"publishers": [
+"Alianza Editorial"
+],
+"publish_date": "Feb 23, 2023",
+"covers": [
+14051599
+],
+"number_of_pages": 504
+},
+{
+"key": "/books/OL47448528M",
+"isbn_13": [
+"9788411481489"
+],
+"isbn_10": [
+"8411481484"
+],
+"physical_format": "hardcover",
+"publishers": [
+"Alianza Editorial"
+],
+"publish_date": "Feb 23, 2023",
+"covers": [
+14051600
+],
+"number_of_pages": 504
+},
+{
+"key": "/books/OL51013964M",
+"isbn_13": [
+"9789100801113"
+],
+"publishers": [
+"Albert Bonniers F\u00f6rlag"
+],
+"publish_date": "2024",
+"covers": [
+14579149
+]
+},
+{
+"key": "/books/OL47709411M",
+"isbn_13": [
+"9780735243347"
+],
+"isbn_10": [
+"0735243344"
+],
+"physical_format": "Hardcover",
+"publishers": [
+"Knopf"
+],
+"publish_date": "5 July 2022",
+"languages": [
+{
+"key": "/languages/eng"
+}
+],
+"covers": [
+14393020
+],
+"number_of_pages": 399
+},
+{
+"key": "/books/OL40318871M",
+"isbn_13": [
+"9781529115543"
+],
+"publishers": [
+"Penguin Random House"
+],
+"publish_date": "2023",
+"languages": [
+{
+"key": "/languages/eng"
+}
+],
+"covers": [
+15154388
+]
+},
+{
+"key": "/books/OL39374639M",
+"isbn_13": [
+"9780593321218"
+],
+"publishers": [
+"Knopf Doubleday Publishing Group"
+],
+"publish_date": "Jul 05, 2022",
+"languages": [
+{
+"key": "/languages/eng"
+}
+],
+"covers": [
+14403563
+]
+},
+{
+"key": "/books/OL37996581M",
+"isbn_13": [
+"9781784744656"
+],
+"publishers": [
+"Penguin Random House"
+],
+"publish_date": "2022",
+"languages": [
+{
+"key": "/languages/eng"
+}
+]
+},
+{
+"key": "/books/OL36484566M",
+"isbn_13": [
+"9780593607831"
+],
+"publishers": [
+"Diversified Publishing",
+"Random House Large Print"
+],
+"publish_date": "2022",
+"languages": [
+{
+"key": "/languages/eng"
+}
+],
+"covers": [
+12859975
+],
+"number_of_pages": 416
+},
+{
+"key": "/books/OL35858334M",
+"isbn_13": [
+"9781473597402"
+],
+"publishers": [
+"Penguin Random House"
+],
+"publish_date": "2022",
+"languages": [
+{
+"key": "/languages/eng"
+}
+]
+},
+{
+"key": "/books/OL35854253M",
+"isbn_13": [
+"9781784744649"
+],
+"physical_format": "Hardback",
+"publishers": [
+"Penguin Random House"
+],
+"publish_date": "2022",
+"languages": [
+{
+"key": "/languages/eng"
+}
+],
+"covers": [
+15255138
+]
+},
+{
+"key": "/books/OL35099313M",
+"isbn_13": [
+"9780593466490"
+],
+"publishers": [
+"Knopf Incorporated, Alfred A."
+],
+"publish_date": "2022",
+"languages": [
+{
+"key": "/languages/eng"
+}
+]
+},
+{
+"key": "/books/OL35099312M",
+"isbn_13": [
+"9780593321201"
+],
+"isbn_10": [
+"0593321200"
+],
+"physical_format": "Hardcover",
+"publishers": [
+"Knopf"
+],
+"publish_date": "July 1, 2022",
+"languages": [
+{
+"key": "/languages/eng"
+}
+],
+"covers": [
+12816990
+],
+"number_of_pages": 401
+}
+]

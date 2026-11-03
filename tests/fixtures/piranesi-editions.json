@@ -1,0 +1,423 @@
+[
+{
+"key": "/books/OL57673802M",
+"isbn_13": [
+"9781635575644"
+],
+"physical_format": "ebook",
+"publishers": [
+"Bloomsbury Publishing"
+],
+"publish_date": "2021"
+},
+{
+"key": "/books/OL57543161M",
+"isbn_13": [
+"9781526681539"
+],
+"publishers": [
+"Bloomsbury Publishing Plc"
+],
+"publish_date": "2024",
+"languages": [
+{
+"key": "/languages/eng"
+}
+],
+"number_of_pages": 400
+},
+{
+"key": "/books/OL61022665M",
+"isbn_13": [
+"9781526622419"
+],
+"isbn_10": [
+"1526622416"
+],
+"physical_format": "eAudiobook",
+"publishers": [
+"Bloomsbury Publishing"
+],
+"publish_places": [
+"London, Greater London, England"
+],
+"publish_date": "2020-09-15",
+"languages": [
+{
+"key": "/languages/eng"
+}
+],
+"covers": [
+15155469
+]
+},
+{
+"key": "/books/OL58608380M",
+"isbn_13": [
+"9781526622440"
+],
+"physical_format": "eBook",
+"publishers": [
+"Bloomsbury"
+],
+"publish_date": "2020",
+"covers": [
+15215371
+]
+},
+{
+"key": "/books/OL57673846M",
+"isbn_13": [
+"9781526622433"
+],
+"physical_format": "Paperback",
+"publishers": [
+"Bloomsbury Publishing PLC"
+],
+"publish_date": "2021",
+"languages": [
+{
+"key": "/languages/eng"
+}
+],
+"covers": [
+15268930,
+15248718
+],
+"number_of_pages": 272
+},
+{
+"key": "/books/OL51561069M",
+"isbn_13": [
+"9783453321984"
+],
+"publishers": [
+"Heyne"
+],
+"publish_date": "09.05.2022",
+"covers": [
+14609166
+],
+"number_of_pages": 272
+},
+{
+"key": "/books/OL47322902M",
+"isbn_13": [
+"9786586015317"
+],
+"isbn_10": [
+"6586015316"
+],
+"physical_format": "hardcover",
+"publish_date": "November 22, 2021",
+"covers": [
+13866011
+]
+},
+{
+"key": "/books/OL46535148M",
+"isbn_13": [
+"9788417918484"
+],
+"isbn_10": [
+"8417918485"
+],
+"physical_format": "paperback",
+"publishers": [
+"Amsterdam"
+],
+"publish_date": "Sep 13, 2021",
+"languages": [
+{
+"key": "/languages/eng"
+}
+],
+"covers": [
+13228480
+],
+"number_of_pages": 276
+},
+{
+"key": "/books/OL37069540M",
+"isbn_13": [
+"9782221250242"
+],
+"isbn_10": [
+"2221250249"
+],
+"physical_format": "paperback",
+"publishers": [
+"ROBERT LAFFONT"
+],
+"publish_date": "Oct 07, 2021",
+"number_of_pages": 306
+},
+{
+"key": "/books/OL39864438M",
+"isbn_13": [
+"9791259670021"
+],
+"physical_format": "eBook",
+"publishers": [
+"Fazi Editore"
+],
+"publish_places": [
+"Rome, Italy"
+],
+"publish_date": "February 4, 2021",
+"languages": [
+{
+"key": "/languages/ita"
+}
+],
+"covers": [
+12953670
+],
+"number_of_pages": 300
+},
+{
+"key": "/books/OL36769135M",
+"isbn_13": [
+"9781526631008"
+],
+"publishers": [
+"Bloomsbury Publishing Plc"
+],
+"publish_date": "2020",
+"languages": [
+{
+"key": "/languages/eng"
+}
+]
+},
+{
+"key": "/books/OL33884545M",
+"isbn_13": [
+"9781526622433"
+],
+"isbn_10": [
+"1526622432"
+],
+"physical_format": "paperback",
+"publishers": [
+"BLOOMSBURY"
+],
+"publish_date": "Aug 19, 2021",
+"covers": [
+11996540
+]
+},
+{
+"key": "/books/OL36128954M",
+"isbn_13": [
+"9781432895082"
+],
+"publishers": [
+"Thorndike Press",
+"Large Print Press"
+],
+"publish_date": "2022",
+"languages": [
+{
+"key": "/languages/eng"
+}
+],
+"covers": [
+13652251
+],
+"number_of_pages": 335
+},
+{
+"key": "/books/OL34985598M",
+"isbn_13": [
+"9788418363283"
+],
+"isbn_10": [
+"8418363282"
+],
+"physical_format": "Paperback",
+"publishers": [
+"Salamandra"
+],
+"publish_places": [
+"Barcelona, Spain"
+],
+"publish_date": "2021-12-07",
+"languages": [
+{
+"key": "/languages/spa"
+}
+],
+"covers": [
+15240267,
+12317539
+],
+"number_of_pages": 272
+},
+{
+"key": "/books/OL33926341M",
+"isbn_13": [
+"9781526622433"
+],
+"isbn_10": [
+"1526622432"
+],
+"publishers": [
+"Bloomsbury Publishing"
+],
+"publish_places": [
+"London, Great Britain"
+],
+"publish_date": "2 Sept. 2021",
+"covers": [
+12498884
+],
+"number_of_pages": 245
+},
+{
+"key": "/books/OL33926266M",
+"isbn_13": [
+"9781526622600"
+],
+"isbn_10": [
+"1526622602"
+],
+"physical_format": "paperback",
+"covers": [
+12013558
+]
+},
+{
+"key": "/books/OL33926241M",
+"isbn_13": [
+"9781526625977"
+],
+"isbn_10": [
+"1526625970"
+],
+"physical_format": "hardcover",
+"publishers": [
+"Bloomsbury Publishing"
+],
+"publish_date": "Sep 28, 2020",
+"covers": [
+-1
+]
+},
+{
+"key": "/books/OL33030582M",
+"isbn_13": [
+"9781432886578"
+],
+"isbn_10": [
+"1432886576"
+],
+"physical_format": "library binding",
+"publishers": [
+"Thorndike Press Large Print"
+],
+"publish_date": "Apr 28, 2021",
+"covers": [
+11713556
+],
+"number_of_pages": 365
+},
+{
+"key": "/books/OL31833301M",
+"isbn_13": [
+"9781635577808"
+],
+"isbn_10": [
+"1635577802"
+],
+"physical_format": "paperback",
+"publishers": [
+"Bloomsbury Publishing"
+],
+"publish_date": "Sep 07, 2021",
+"covers": [
+15166481
+],
+"number_of_pages": 272
+},
+{
+"key": "/books/OL31418201M",
+"isbn_13": [
+"9781635576719"
+],
+"isbn_10": [
+"1635576717"
+],
+"physical_format": "gift",
+"publishers": [
+"Bloomsbury USA (Limited Issue, Author Signed Hardcover Edition)"
+],
+"publish_date": "Sep 15, 2020",
+"covers": [
+10517218
+]
+},
+{
+"key": "/books/OL29486417M",
+"isbn_13": [
+"9781526622426"
+],
+"publishers": [
+"Bloomsbury Publishing Plc"
+],
+"publish_places": [
+"London"
+],
+"publish_date": "2020",
+"languages": [
+{
+"key": "/languages/eng"
+}
+],
+"covers": [
+13011435
+],
+"number_of_pages": 272
+},
+{
+"key": "/books/OL28439584M",
+"isbn_13": [
+"9781635575637"
+],
+"physical_format": "Trade paperback",
+"publishers": [
+"Berryville, Bloomsbury Publishing"
+],
+"publish_places": [
+"Berryville, USA"
+],
+"publish_date": "2020",
+"languages": [
+{
+"key": "/languages/eng"
+}
+],
+"number_of_pages": 245
+},
+{
+"key": "/books/OL28300471M",
+"isbn_13": [
+"9781635575637"
+],
+"isbn_10": [
+"163557563X"
+],
+"physical_format": "hardcover",
+"publishers": [
+"Bloomsbury Publishing"
+],
+"publish_date": "Sep 15, 2020",
+"lccn": [
+"2020009930"
+],
+"covers": [
+10226290
+],
+"number_of_pages": 272
+}
+]

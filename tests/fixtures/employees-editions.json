@@ -1,0 +1,486 @@
+[
+{
+"key": "/books/OL59196978M",
+"isbn_13": [
+"9786556924519"
+],
+"physical_format": "Brochura",
+"publishers": [
+"Todavia"
+],
+"publish_places": [
+"Brasil"
+],
+"publish_date": "8 junho 2023",
+"languages": [
+{
+"key": "/languages/por"
+}
+],
+"covers": [
+15089653
+],
+"number_of_pages": 136
+},
+{
+"key": "/books/OL58426887M",
+"isbn_13": [
+"9789532594218"
+],
+"publishers": [
+"Hena Com"
+],
+"publish_date": "2023",
+"languages": [
+{
+"key": "/languages/hrv"
+}
+],
+"covers": [
+14859112
+]
+},
+{
+"key": "/books/OL58426859M",
+"isbn_13": [
+"9782924898505"
+],
+"publishers": [
+"La Peuplade"
+],
+"publish_date": "2020",
+"languages": [
+{
+"key": "/languages/fre"
+}
+],
+"covers": [
+14859110
+]
+},
+{
+"key": "/books/OL58426848M",
+"isbn_13": [
+"9782266297783"
+],
+"publishers": [
+"Pocket"
+],
+"publish_date": "2021",
+"languages": [
+{
+"key": "/languages/fre"
+}
+],
+"covers": [
+14859108
+]
+},
+{
+"key": "/books/OL58422645M",
+"isbn_13": [
+"9789928368232"
+],
+"publishers": [
+"Berk"
+],
+"publish_date": "2024",
+"languages": [
+{
+"key": "/languages/alb"
+}
+],
+"covers": [
+14859032
+]
+},
+{
+"key": "/books/OL58422626M",
+"isbn_13": [
+"9789635047628"
+],
+"publishers": [
+"Eur\u00f3pa"
+],
+"publish_date": "2023",
+"languages": [
+{
+"key": "/languages/hun"
+}
+],
+"covers": [
+14859030
+]
+},
+{
+"key": "/books/OL58422616M",
+"isbn_13": [
+"9788395213199"
+],
+"publishers": [
+"Driada"
+],
+"publish_date": "2023",
+"languages": [
+{
+"key": "/languages/pol"
+}
+],
+"covers": [
+14859028
+]
+},
+{
+"key": "/books/OL58422607M",
+"isbn_13": [
+"9788234001697"
+],
+"publishers": [
+"Det Norske Samlaget"
+],
+"publish_date": "2021",
+"languages": [
+{
+"key": "/languages/nor"
+}
+],
+"covers": [
+14859027
+]
+},
+{
+"key": "/books/OL58422595M",
+"isbn_13": [
+"9783751845120"
+],
+"publishers": [
+"Matthes & Seitz"
+],
+"publish_date": "2024",
+"languages": [
+{
+"key": "/languages/ger"
+}
+],
+"covers": [
+14859026
+]
+},
+{
+"key": "/books/OL58422583M",
+"publishers": [
+"M\u00e4rz"
+],
+"publish_date": "2022",
+"languages": [
+{
+"key": "/languages/ger"
+}
+],
+"covers": [
+14859024
+]
+},
+{
+"key": "/books/OL58422538M",
+"isbn_13": [
+"9789896233389"
+],
+"publishers": [
+"Elsinore"
+],
+"publish_date": "2022",
+"languages": [
+{
+"key": "/languages/por"
+}
+],
+"covers": [
+14859021
+]
+},
+{
+"key": "/books/OL58422507M",
+"isbn_13": [
+"9788842830764"
+],
+"publishers": [
+"Il Saggiatore"
+],
+"publish_date": "2022",
+"languages": [
+{
+"key": "/languages/ita"
+}
+],
+"covers": [
+14859020
+]
+},
+{
+"key": "/books/OL58422275M",
+"isbn_13": [
+"9789523521377"
+],
+"publishers": [
+"Kosmos"
+],
+"publish_date": "2022",
+"languages": [
+{
+"key": "/languages/fin"
+}
+]
+},
+{
+"key": "/books/OL58422260M",
+"publishers": [
+"Can Yay\u0131nlar\u0131"
+],
+"publish_date": "2023",
+"languages": [
+{
+"key": "/languages/tur"
+}
+],
+"covers": [
+14859014
+]
+},
+{
+"key": "/books/OL58422239M",
+"isbn_13": [
+"9789146240921"
+],
+"publishers": [
+"Wahlstr\u00f6m & Widstrand"
+],
+"publish_date": "2023",
+"languages": [
+{
+"key": "/languages/swe"
+}
+],
+"covers": [
+14859013
+]
+},
+{
+"key": "/books/OL58421284M",
+"isbn_13": [
+"9789493248137"
+],
+"publishers": [
+"Das Mag Uitgevers"
+],
+"publish_date": "2021",
+"languages": [
+{
+"key": "/languages/dut"
+}
+],
+"covers": [
+14859010
+]
+},
+{
+"key": "/books/OL58409054M",
+"isbn_13": [
+"9788702265583"
+],
+"publishers": [
+"Gyldendal"
+],
+"publish_date": "2018",
+"languages": [
+{
+"key": "/languages/dan"
+}
+],
+"covers": [
+14858743
+],
+"number_of_pages": 134
+},
+{
+"key": "/books/OL47573296M",
+"isbn_13": [
+"9788433901637"
+],
+"isbn_10": [
+"843390163X"
+],
+"physical_format": "paperback",
+"publishers": [
+"Editorial Anagrama"
+],
+"publish_date": "Jan 18, 2023",
+"languages": [
+{
+"key": "/languages/dan"
+}
+],
+"covers": [
+14194294
+],
+"number_of_pages": 136
+},
+{
+"key": "/books/OL47573299M",
+"isbn_13": [
+"9788433901637"
+],
+"isbn_10": [
+"843390163X"
+],
+"physical_format": "paperback",
+"publishers": [
+"Editorial Anagrama"
+],
+"publish_date": "Jan 18, 2023",
+"covers": [
+14194297
+],
+"number_of_pages": 136
+},
+{
+"key": "/books/OL47573297M",
+"isbn_13": [
+"9788433901637"
+],
+"isbn_10": [
+"843390163X"
+],
+"physical_format": "paperback",
+"publishers": [
+"Editorial Anagrama"
+],
+"publish_date": "Jan 18, 2023",
+"covers": [
+14194295
+],
+"number_of_pages": 136
+},
+{
+"key": "/books/OL47573298M",
+"isbn_13": [
+"9788433901637"
+],
+"isbn_10": [
+"843390163X"
+],
+"physical_format": "paperback",
+"publishers": [
+"Editorial Anagrama"
+],
+"publish_date": "Jan 18, 2023",
+"covers": [
+14194296
+],
+"number_of_pages": 136
+},
+{
+"key": "/books/OL47453665M",
+"isbn_13": [
+"9788433901705"
+],
+"isbn_10": [
+"8433901702"
+],
+"physical_format": "paperback",
+"publishers": [
+"Editorial Anagrama"
+],
+"publish_date": "Jan 18, 2023",
+"covers": [
+14057564
+],
+"number_of_pages": 144
+},
+{
+"key": "/books/OL47453664M",
+"isbn_13": [
+"9788433901705"
+],
+"isbn_10": [
+"8433901702"
+],
+"physical_format": "paperback",
+"publishers": [
+"Editorial Anagrama"
+],
+"publish_date": "Jan 18, 2023",
+"covers": [
+14057563
+],
+"number_of_pages": 144
+},
+{
+"key": "/books/OL38805719M",
+"isbn_13": [
+"9780811234825"
+],
+"publishers": [
+"Norton & Company Limited, W. W."
+],
+"publish_date": "2023",
+"languages": [
+{
+"key": "/languages/eng"
+}
+]
+},
+{
+"key": "/books/OL40151182M",
+"isbn_13": [
+"9780811231367"
+],
+"publishers": [
+"New Directions Publishing Corporation"
+],
+"publish_date": "2022",
+"languages": [
+{
+"key": "/languages/eng"
+}
+]
+},
+{
+"key": "/books/OL35547833M",
+"isbn_13": [
+"9781999992880"
+],
+"isbn_10": [
+"1999992881"
+],
+"physical_format": "paperback",
+"publishers": [
+"Lolli Editions"
+],
+"publish_date": "Sep 21, 2020",
+"languages": [
+{
+"key": "/languages/eng"
+}
+],
+"covers": [
+12294759
+],
+"number_of_pages": 135
+},
+{
+"key": "/books/OL34787860M",
+"isbn_13": [
+"9780811231350"
+],
+"publishers": [
+"Norton & Company Limited, W. W."
+],
+"publish_date": "2022",
+"languages": [
+{
+"key": "/languages/eng"
+}
+]
+}
+]

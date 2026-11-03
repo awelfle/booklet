@@ -1,0 +1,177 @@
+:root {
+  --bg: #f4efe6; --surface: #fffaf2; --ink: #26221d; --muted: #7a7166; --line: #e3dacb;
+  --accent: #b4532a; --accent-ink: #fffaf2; --danger: #a33a2a; --star: #c98a1b;
+  --shadow: 0 1px 2px rgba(60,40,20,.08), 0 6px 20px rgba(60,40,20,.08);
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1b1916; --surface: #25221e; --ink: #ede6da; --muted: #9c9284; --line: #36312b;
+    --accent: #e07a4b; --accent-ink: #1b1916; --danger: #e0715f; --star: #e5b04a;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 6px 20px rgba(0,0,0,.3);
+  }
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); }
+body { min-height: 100dvh; padding-bottom: calc(96px + env(safe-area-inset-bottom)); }
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+
+header {
+  position: sticky; top: 0; z-index: 5; background: var(--bg);
+  padding: calc(env(safe-area-inset-top) + 14px) 16px 0;
+}
+.top { display: flex; align-items: center; justify-content: space-between; }
+h1 { font-family: var(--serif); font-weight: 600; font-size: 28px; margin: 0; letter-spacing: -.01em; }
+/* Booklet wordmark: book icon + Fraunces italic, both in the accent color. */
+h1.brand {
+  display: flex; align-items: center; gap: 8px; color: var(--accent);
+  font-family: "Fraunces", var(--serif); font-style: italic; font-size: 30px; letter-spacing: -.02em;
+}
+h1.brand svg { flex: none; }
+.icon-btn { background: none; border: 0; padding: 8px; margin: -8px; color: var(--muted); display: flex; }
+nav.tabs { display: flex; gap: 4px; margin-top: 12px; border-bottom: 1px solid var(--line); }
+nav.tabs button {
+  flex: 1; background: none; border: 0; padding: 10px 0 12px; font-size: 15px; color: var(--muted);
+  border-bottom: 2px solid transparent; margin-bottom: -1px;
+}
+nav.tabs button[aria-selected="true"] { color: var(--ink); border-color: var(--accent); font-weight: 600; }
+nav.tabs .count { font-weight: 400; color: var(--muted); font-size: 13px; margin-left: 2px; }
+
+main { padding: 8px 16px; }
+.book {
+  display: flex; gap: 14px; align-items: center; width: 100%; text-align: left;
+  background: none; border: 0; border-bottom: 1px solid var(--line); padding: 14px 0;
+}
+.cover {
+  flex: none; width: 52px; height: 78px; border-radius: 3px; background: var(--line);
+  object-fit: cover; box-shadow: var(--shadow);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--serif); color: var(--muted); font-size: 20px;
+}
+.meta { min-width: 0; flex: 1; }
+.title { font-family: var(--serif); font-size: 17px; line-height: 1.25; font-weight: 600; }
+.author { color: var(--muted); font-size: 14px; margin-top: 2px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sub { color: var(--muted); font-size: 12px; margin-top: 6px; }
+.stars { color: var(--star); letter-spacing: 1px; }
+.empty { text-align: center; color: var(--muted); padding: 56px 16px; font-family: var(--serif); font-size: 17px; }
+.empty small { display: block; font-family: var(--sans); font-size: 13px; margin-top: 8px; }
+
+.fab {
+  position: fixed; right: 20px; bottom: calc(24px + env(safe-area-inset-bottom)); z-index: 6;
+  width: 60px; height: 60px; border-radius: 30px; border: 0;
+  background: var(--accent); color: var(--accent-ink); font-size: 30px; line-height: 1; box-shadow: var(--shadow);
+}
+
+/* Bottom sheets */
+.scrim { position: fixed; inset: 0; background: rgba(20,15,10,.35); z-index: 10; opacity: 0; pointer-events: none; transition: opacity .2s; }
+.scrim.open { opacity: 1; pointer-events: auto; }
+.sheet {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 11; max-height: 88dvh; overflow-y: auto;
+  background: var(--surface); border-radius: 16px 16px 0 0; box-shadow: var(--shadow);
+  padding: 10px 16px calc(20px + env(safe-area-inset-bottom));
+  transform: translateY(105%); transition: transform .25s cubic-bezier(.2,.8,.2,1);
+}
+.sheet.open { transform: none; }
+/* Sheets size to their content and are anchored at the bottom, so a growing sheet moves its top up.
+   The Add sheet's results stream in while you type, so it opens at full height and never moves. */
+#addSheet { height: 88dvh; }
+.sheet { overscroll-behavior: contain; }
+.grabber { width: 36px; height: 5px; border-radius: 3px; background: var(--line); margin: 0 auto 14px; }
+.sheet h2 { font-family: var(--serif); font-size: 21px; margin: 0 0 4px; font-weight: 600; }
+.sheet .lede { color: var(--muted); margin: 0 0 16px; font-size: 14px; }
+
+.search { display: flex; gap: 8px; margin-bottom: 8px; }
+/* Pinned top of a scrolling sheet. Negative margin/padding cancel the sheet's top padding so the
+   pinned area reaches the sheet's edge and results don't peek out above it. */
+.sheet-head {
+  position: sticky; top: -10px; z-index: 1;
+  margin: -10px -16px 0; padding: 10px 16px 2px;
+  background: var(--surface); border-bottom: 1px solid transparent;
+}
+.sheet-head.scrolled { border-bottom-color: var(--line); }
+input[type=search], input[type=text], input[type=password] {
+  width: 100%; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px;
+  background: var(--bg); font-size: 16px; outline: none;
+}
+input:focus { border-color: var(--accent); }
+.results .book { padding: 10px 0; }
+.results .cover { width: 40px; height: 60px; font-size: 16px; }
+
+.shelf-pick { display: flex; gap: 6px; margin: 10px 0 4px; }
+.shelf-pick button {
+  flex: 1; padding: 8px 4px; border-radius: 999px; border: 1px solid var(--line);
+  background: none; font-size: 13px; color: var(--muted);
+}
+.shelf-pick button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
+.actions { display: grid; gap: 8px; margin-top: 16px; }
+.btn {
+  width: 100%; padding: 14px; border-radius: 12px; border: 1px solid var(--line);
+  background: var(--bg); font-size: 16px; font-weight: 500;
+}
+.btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.btn.quiet { background: none; border-color: transparent; color: var(--muted); }
+.btn.danger { color: var(--danger); }
+.btn:disabled { opacity: .5; }
+
+.detail-head { display: flex; gap: 14px; align-items: flex-start; }
+.detail-head .cover { width: 72px; height: 108px; }
+.links { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
+/* Stacked rows like iOS Settings: label left, date right. Native date inputs have a wide
+   intrinsic size on iOS, so they get no box of their own and can shrink. */
+.dates { margin-top: 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--bg); }
+.date-field { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 50px; padding: 0 6px 0 14px; }
+.date-field + .date-field { border-top: 1px solid var(--line); }
+.date-label { font-size: 15px; }
+.date-value { position: relative; flex: 0 1 auto; min-width: 0; }
+.date-value input {
+  -webkit-appearance: none; appearance: none; display: block; min-width: 0; max-width: 170px;
+  border: 0; background: transparent; color: var(--accent); font-size: 16px; padding: 12px 8px; text-align: right;
+}
+.date-value input::-webkit-date-and-time-value { text-align: right; }
+/* Desktop browsers: no calendar icon; the whole field opens the picker instead. */
+.date-value input { position: relative; }
+.date-value input::-webkit-calendar-picker-indicator { position: absolute; inset: 0; width: auto; height: auto; opacity: 0; cursor: pointer; }
+.date-value input:focus { outline: none; }
+.date-empty { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); color: var(--muted); font-size: 16px; pointer-events: none; display: none; }
+.date-value.is-empty .date-empty { display: block; }
+.date-value.is-empty input { color: transparent; }
+.links a {
+  flex: 1; text-align: center; padding: 9px 6px; border-radius: 999px; border: 1px solid var(--line);
+  color: var(--ink); text-decoration: none; font-size: 13px; white-space: nowrap;
+}
+.blurb {
+  margin: 14px 0 0; font-family: var(--serif); font-size: 15px; line-height: 1.45; white-space: pre-line;
+  display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; cursor: pointer;
+}
+.blurb.open { -webkit-line-clamp: unset; }
+.rate { display: flex; justify-content: center; gap: 6px; margin: 14px 0 0; }
+.rate button { background: none; border: 0; font-size: 34px; color: var(--line); padding: 2px; }
+.rate button.on { color: var(--star); }
+
+label.field { display: block; font-size: 13px; color: var(--muted); margin: 14px 0 6px; }
+.hint { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.4; }
+.hint a { color: var(--accent); }
+.fine-print { margin-top: 20px; text-align: center; }
+
+.toast {
+  position: fixed; left: 50%; bottom: calc(100px + env(safe-area-inset-bottom)); z-index: 20;
+  transform: translate(-50%, 20px); opacity: 0; transition: all .2s;
+  background: var(--ink); color: var(--bg); padding: 10px 16px; border-radius: 999px; font-size: 14px;
+  max-width: calc(100% - 32px); pointer-events: none;
+}
+.toast.show { opacity: 1; transform: translate(-50%, 0); }
+.spin { display: inline-block; width: 16px; height: 16px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; animation: s .7s linear infinite; vertical-align: -3px; }
+@keyframes s { to { transform: rotate(360deg); } }
+
+/* Formerly inline styles in the templates */
+.search { margin-top: 10px; }
+.results-status { padding: 16px; }
+.results .btn.quiet { margin-top: 8px; }
+.problem { text-align: center; }
+a.btn { display: block; text-align: center; text-decoration: none; }
+.sheet .centered { text-align: center; }
+.welcome-btn { width: auto; margin-top: 20px; padding: 12px 22px; font-family: var(--sans); }
+[hidden] { display: none !important; }

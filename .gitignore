@@ -1,0 +1,6 @@
+# Personal settings for your own deploy (see js/config.js)
+config.local.js
+.netlify/
+node_modules/
+.DS_Store
+.claude/
